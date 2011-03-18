@@ -1,0 +1,22 @@
+OVERVIEW
+This is a set of scripts to index a PCAP file into a SQLite3 DB and allow you to recover them VERY quickly.
+
+
+WHY
+Going through PCAPs with tcpdump is slow. Precious minutes eat away at concentration.
+
+
+HISTORY
+The first results for PCAP indexing from google are:
+ - http://geek00l.blogspot.com/2008/03/sancp-pcap-index.html
+ - http://blog.vorant.com/2008/04/pcap-indexing.html
+This is the same idea I followed and showed very good speed improvements. The problem was too much coupling. SANCP is a nice tool, but I didn't want to couple a meta data extraction tool to direct packet recovery. One of the problems is with SANCP sessionizing - I'm not sure how good it is as I've seen it do some very odd things when analyzing PCAP files.
+
+Most of the original code for this project was created during the last couple of days of a course in packet analysis that I was disappointed with. 
+
+
+BUILDING
+The only thing that needs to be built is the index_pkts.c file. Simply run:
+
+	$ gcc -lpcap -o index_pkts index_pkts.c
+	

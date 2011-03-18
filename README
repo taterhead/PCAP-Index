@@ -46,8 +46,8 @@ The major filter option missing is a BPF-like 'host' option that checks for both
 
 
 STATS
-For a 13GB PCAP, it takes 2h 36min to create the index. 9s to recover 3k pkts between two IPs.
-For a 1.8GB PCAP, it takes 2m 48s to create the index. A couple of seconds to recover approx 2k pkts between two hosts.
+For a 13GB PCAP, it takes 2h 36min to create the index. SQLite DB file size: 4.6GB. 9s to recover 3k pkts between two IPs.
+For a 1.8GB PCAP, it takes 2m 48s to create the index. SQLite DB file size: 764MB. A couple of seconds to recover approx 2k pkts between two hosts.
 
 
 FUTURE WORK

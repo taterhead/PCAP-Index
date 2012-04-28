@@ -1,5 +1,5 @@
 UPDATE - APR 2012
-It looks like you're best bet for "production" performance is cxtracker (https://github.com/gamelinux/cxtracker). It turns out my approach of indexing every packet wasn't a winning one :) But I'll leave this code up as it might be interesting to someone else, especially the pyparsing code.
+It looks like you're best bet for "production" (not that this was ever anywhere near prod...) performance is cxtracker (https://github.com/gamelinux/cxtracker). It turns out my approach of indexing every packet wasn't a winning one :) But I'll leave this code up as it might be interesting to someone else, especially the pyparsing code.
 
 
 OVERVIEW

@@ -1,0 +1,1 @@
+Can't seem to increase speed of importing data into sqlite past ~6-7MB/s from the output of index_pkts. If I import without any indexes in the sqlite database, it can import at ~15MB/s, which should be able to keep up with busy links

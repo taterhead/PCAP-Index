@@ -113,6 +113,8 @@ filterStr = getStrFromNestedLists(filterParsed)
 # TODO: Could do this more elegantly using the parser - then could also specify the other src/dst ports as 0
 filterStr = filterStr.replace("src ", "src_addr_ll ")
 filterStr = filterStr.replace("dst ", "dst_addr_ll ")
+filterStr = filterStr.replace("sport ", "src_port ")
+filterStr = filterStr.replace("dport ", "dst_port ")
 
 # Replace any 'time' values left with tv_s
 filterStr = filterStr.replace("time ", "tv_s ")
